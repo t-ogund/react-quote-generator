@@ -63,7 +63,7 @@ class QuoteBox extends React.Component {
                     <p id="author">{this.state.initialAuthor}</p>
                 </section>
                 <section className="button-section">
-                    <a href="twitter">Twitter Logo</a>
+                    <a href={`https://www.twitter.com/intent/tweet?text=${this.state.initialQuote} -${this.state.initialAuthor} #quotes`} target="_blank">Twitter Logo</a>
                     {/* <Button onClick={this.handleClick} buttonText="New Quote" /> */}
                     <button onClick={this.handleClick}>Click Me</button>
                 </section>
